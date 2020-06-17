@@ -87,45 +87,45 @@ article {
   }
 }
 
-article:first-child {
+article[data-header] {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 1023px) {
-  article:first-child {
+  article[data-header] {
     font-size: 0.875rem;
   }
 }
 
-article:first-child p {
+article[data-header] p {
   font-size: 1.25rem;
 }
 
 @media screen and (max-width: 1023px) {
-  article:first-child p {
+  article[data-header] p {
     font-size: 1rem;
   }
 }
 
-article:nth-child(2) {
+article[data-disclaimer] {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
 
   background-color: #fef4da;
 }
 
-article:nth-child(2) strong {
+article[data-disclaimer] strong {
   font-size: 2rem;
 }
 
 @media screen and (max-width: 1023px) {
-  article:nth-child(2) strong {
+  article[data-disclaimer] strong {
     font-size: 1.75rem;
   }
 }
 
-article:nth-child(2) p {
+article[data-disclaimer] p {
   margin: 0;
 }
 
