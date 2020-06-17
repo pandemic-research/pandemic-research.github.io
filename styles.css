@@ -36,6 +36,7 @@ header p {
   max-width: 100%;
   margin: 0 auto;
   padding: 1.5rem 4rem;
+  padding-right: 25%;
 }
 
 @media screen and (max-width: 1023px) {
@@ -127,6 +128,12 @@ article[data-disclaimer] strong {
 
 article[data-disclaimer] p {
   margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  article[data-disclaimer] p {
+    font-size: 0.875rem;
+  }
 }
 
 h1 {
