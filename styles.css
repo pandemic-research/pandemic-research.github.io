@@ -39,9 +39,17 @@ header p {
   padding-right: 25%;
 }
 
+header p span {
+  display: block;
+}
+
 @media screen and (max-width: 1023px) {
   header p {
     padding: 1rem 2rem;
+  }
+
+  header p span {
+    display: inline;
   }
 }
 
@@ -53,6 +61,19 @@ header p {
 
 header a {
   color: #fff;
+}
+
+figure {
+  display: block;
+  position: relative;
+
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
 }
 
 section {
@@ -136,13 +157,23 @@ article[data-disclaimer] p {
   }
 }
 
+figure figcaption {
+  font: 600 0.875rem/1.375 "Montserrat", sans-serif;
+}
+
+figure figcaption p {
+  margin: 0 0 1rem;
+}
+
+figure figcaption p:last-child {
+  margin-bottom: 0;
+}
+
 h1 {
   position: relative;
 
   margin: 0 0 1.5rem;
-  font-size: 3.5rem;
-  font-weight: 800;
-  line-height: 1.075;
+  font: 800 3.25rem/1.075 "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 1023px) {
@@ -239,15 +270,28 @@ blockquote {
   }
 }
 
+@media screen and (max-width: 767px) {
+  blockquote {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+}
+
 table {
   width: 100%;
 
   margin: 2rem 0;
   border-spacing: 0;
+
+  font: 600 1rem/1.5 "Montserrat", sans-serif;
 }
 
 table td {
   padding: 0.5rem 1.5rem 0.5rem 0;
+}
+
+table td strong {
+  font-weight: 800;
 }
 
 table td {
