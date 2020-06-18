@@ -442,7 +442,7 @@ a[data-back] {
 @media screen and (max-width: 767px) {
   a[data-back] {
     width: 100%;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 }
 
