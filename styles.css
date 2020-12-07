@@ -13,9 +13,80 @@ body {
   font: normal 18px/1.5 Georgia, sans;
 }
 
+body[data-home] {
+  color: #000;
+  background-color: #fff;
+}
+
 @media screen and (max-width: 1023px) {
   body {
     font-size: 16px;
+  }
+}
+
+main {
+  display: block;
+
+  width: 56rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10% 4rem 2rem;
+
+  color: #000;
+  background-color: #fff;
+}
+
+main ul {
+  margin: 2.5rem 0 0;
+  padding: 0;
+}
+
+main li {
+  display: block;
+  position: relative;
+
+  margin: 0 0 2.5rem;
+
+  color: #000;
+  font: 800 1.875rem/1.25 "Montserrat", sans-serif;
+}
+
+main li strong {
+  display: block;
+}
+
+main li a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  main {
+    padding: 1rem 2rem;
+  }
+
+  main li {
+    font-size: 1.375rem;
+  }
+
+  main li a {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -42,6 +113,10 @@ header p span {
   display: block;
 }
 
+header a {
+  color: #fff;
+}
+
 @media screen and (max-width: 1023px) {
   header p {
     padding: 1rem 2rem;
@@ -56,10 +131,6 @@ header p span {
   header p {
     padding: 1rem 1.5rem;
   }
-}
-
-header a {
-  color: #fff;
 }
 
 figure {
@@ -93,6 +164,10 @@ article {
   color: #000;
   background: #fff;
   border-radius: 0.5rem;
+}
+
+article >:first-child {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -248,6 +323,18 @@ h3 {
 @media screen and (max-width: 767px) {
   h3 {
     font-size: 1.375rem;
+  }
+}
+
+h4 {
+  margin: 2rem 0 0.5rem;
+  font: 800 1.125rem/1.5 "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  h4 {
+    margin: 1.5rem 0 0.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -427,7 +514,7 @@ a[data-back] {
   margin-top: 1rem;
   padding: 0.75rem 2rem;
 
-  font: 600 1.5rem/1.25 "Montserrat", sans-serif;;
+  font: 600 1.5rem/1.25 "Montserrat", sans-serif;
 
   color: #fff;
   background-color: #fd3b6f;
@@ -448,4 +535,33 @@ a[data-back] {
 
 a[data-back]:hover {
   filter: brightness(120%);
+}
+
+details {
+  margin: 1.5rem -1.5rem;
+  padding: 1.5rem;
+  font: 600 1rem/1.5 "Montserrat", sans-serif;
+  background-color: #eee;
+  border-radius: 0.25rem;
+}
+
+details summary {
+  font-weight: 800;
+  font-size: 1.25rem;
+
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  details {
+    font-size: 0.875rem;
+    margin: 1rem -0.75rem;
+    padding: 0.75rem;
+  }
+
+  details summary {
+    font-size: 1rem;
+  }
 }
