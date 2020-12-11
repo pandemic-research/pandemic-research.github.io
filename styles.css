@@ -8,14 +8,9 @@ body {
   margin: 0;
   padding: 0;
 
-  color: #fff;
-  background: #000;
-  font: normal 18px/1.5 Georgia, sans;
-}
-
-body[data-home] {
   color: #000;
-  background-color: #fff;
+  background: #fff;
+  font: normal 18px/1.5 Georgia, sans;
 }
 
 @media screen and (max-width: 1023px) {
